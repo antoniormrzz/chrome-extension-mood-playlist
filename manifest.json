@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Mood playlist suggestion",
+  "version": "1.0",
+  "description": "This extension will suggest you a playlist based on your mood",
+  "icons": {
+    "64": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png"
+    },
+    "default_title": "Suggest me a playlist"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "contextMenus"
+  ]
+}
